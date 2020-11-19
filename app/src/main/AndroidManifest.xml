@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mesinabstrak">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cartoondb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cartoondb"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".nfa_proses"></activity>
+        <activity android:name=".nfa_tuple" />
+        <activity android:name=".nfa" />
+        <activity android:name=".dfa_tuple" />
+        <activity android:name=".dfa_proses" />
+        <activity android:name=".dfa" />
+        <activity android:name=".aboutus" />
+        <activity android:name=".MenuAct" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

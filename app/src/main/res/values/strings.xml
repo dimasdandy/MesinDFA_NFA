@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mesin Abstrak</string>
+    <string name="title_activity_nfa_proses">nfa_proses</string>
+</resources>

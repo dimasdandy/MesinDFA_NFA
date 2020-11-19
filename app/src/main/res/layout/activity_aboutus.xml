@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F5F8"
+    tools:context=".aboutus">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bgheaderminimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mm"
+        android:text="About Us"
+        android:textColor="#FFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="397dp"
+        android:layout_height="267dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/bgmenus"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="157dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/bgs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:id="@+id/lyNama"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/idcard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Bagus Tegar Dwi I"
+                    android:textColor="@color/myGreen"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyNpm"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/npm"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="173112706450082"
+                    android:textColor="@color/myGreen"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyFak"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/graduation"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FTKI - Informatika"
+                    android:textColor="@color/myGreen"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyAlamat"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/email"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bagus1698@gmail.com"
+                    android:textColor="@color/myGreen"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyTelp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mobilephone"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0856 5929 8887"
+                    android:textColor="@color/myGreen"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyMap"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/map"
+                    android:layout_marginTop="2dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl.Anggrek IV AS-37 RT3\nRW14. Jatisampurna, Bekasi"
+                    android:textColor="@color/myGreen"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="397dp"
+        android:layout_height="267dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/bgmenus"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.09">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="157dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ddd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyNama2"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/idcard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Dimas Dandy A. S"
+                    android:textColor="@color/myGreen"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyNpm2"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/npm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="173112706450083"
+                    android:textColor="@color/myGreen"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyFak2"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/graduation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="FTKI - Informatika"
+                    android:textColor="@color/myGreen"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyAlamat2"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="dimazdandy@gmail.com"
+                    android:textColor="@color/myGreen"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyTelp2"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/mobilephone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="0857 7243 1910"
+                    android:textColor="@color/myGreen"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyMap2"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lyNama">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Permata Cimanggis, Cluster\nKumala B11/2. Tapos,Depok"
+                    android:textColor="@color/myGreen"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
